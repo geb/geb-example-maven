@@ -20,10 +20,6 @@ import spock.lang.*
 @Stepwise
 class GoogleWikipediaSpec extends GebReportingSpec {
     
-    static {
-        Thread.currentThread().threadGroup.daemon = true
-    }
-    
     def "go to google"() {
         when:
         go() // uses base url system property
