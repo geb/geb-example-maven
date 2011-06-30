@@ -25,12 +25,18 @@ class GoogleWikipediaSpec extends GebReportingSpec {
         go() // uses base url system property
         
         then:
-        assert title == "Google"
+        title == "Google"
     }
     
     def "search for wikipedia"() {
+        given:
+        q = "wikipedia"
+        
+        and:
+        waitFor { btnG().displayed }
+        
         when:
-        $("input", name: "q").value("wikipedia")
+        btnG().click()
         
         then:
         waitFor { title.endsWith("Google Search") }
