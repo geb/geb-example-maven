@@ -9,7 +9,7 @@
   <properties>
     
     <gebVersion>0.6.0</gebVersion>
-    <seleniumVersion>2.0rc3</seleniumVersion>
+    <seleniumVersion>2.13.0</seleniumVersion>
     
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -43,6 +43,12 @@
       <artifactId>selenium-firefox-driver</artifactId>
       <version>${seleniumVersion}</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>com.opera</groupId>
+    	<artifactId>operadriver</artifactId>
+    	<version>0.7.3</version>
+    	<scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>

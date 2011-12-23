@@ -44,7 +44,7 @@ class GoogleWikipediaSpec extends GebReportingSpec {
     
     def "the first result should be wikipedia"() {
         given:
-        def firstLink = $("li.g", 0).find("a.l")
+        def firstLink = $("li.g", 0).find("a.l",0)
         
         expect:
         firstLink.text() == "Wikipedia"
