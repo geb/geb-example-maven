@@ -53,7 +53,7 @@ class GoogleWikipediaSpec extends GebReportingSpec {
         firstLink.click()
         
         then:
-        waitFor { title == "Wikipedia" }
+        waitFor { title == "Wikipedia, the free encyclopedia" }
     }
     
 }
