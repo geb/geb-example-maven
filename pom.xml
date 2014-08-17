@@ -62,7 +62,6 @@
             <include>*Spec.*</include>
           </includes>
           <systemPropertyVariables>
-            <geb.build.baseUrl>http://google.com/ncr</geb.build.baseUrl>
             <geb.build.reportsDir>target/test-reports/geb</geb.build.reportsDir>
           </systemPropertyVariables>
         </configuration>
