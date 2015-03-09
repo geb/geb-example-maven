@@ -9,8 +9,8 @@
   <url>http://gebish.org</url>
   <properties>
     <gebVersion>0.10.0</gebVersion>
-    <seleniumVersion>2.43.1</seleniumVersion>
-    <groovyVersion>2.3.6</groovyVersion>
+    <seleniumVersion>2.45.0</seleniumVersion>
+    <groovyVersion>2.4.1</groovyVersion>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
@@ -29,7 +29,7 @@
     <dependency>
       <groupId>org.spockframework</groupId>
       <artifactId>spock-core</artifactId>
-      <version>0.7-groovy-2.0</version>
+      <version>1.0-groovy-2.4</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>
