@@ -8,7 +8,7 @@
   <name>Geb Maven Example</name>
   <url>http://gebish.org</url>
   <properties>
-    <gebVersion>0.12.0</gebVersion>
+    <gebVersion>0.12.1</gebVersion>
     <seleniumVersion>2.46.0</seleniumVersion>
     <groovyVersion>2.4.1</groovyVersion>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
