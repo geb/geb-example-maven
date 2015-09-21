@@ -66,6 +66,14 @@
           </systemPropertyVariables>
         </configuration>
       </plugin>
+        <plugin>
+        <groupId>com.rimerosolutions.maven.plugins</groupId>
+        <artifactId>wrapper-maven-plugin</artifactId>
+        <version>0.0.4</version>
+        <configuration>
+          <mavenVersion>3.3.3</mavenVersion>
+        </configuration>
+      </plugin>
       <plugin>
         <groupId>org.codehaus.gmaven</groupId>
         <artifactId>gmaven-plugin</artifactId>
