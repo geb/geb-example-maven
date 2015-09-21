@@ -1,4 +1,4 @@
-[![Build Status](https://drone.io/github.com/geb/geb-example-maven/status.png)](https://drone.io/github.com/geb/geb-example-maven/latest)
+[![Build Status](https://snap-ci.com/geb/geb-example-maven/branch/master/build_image)](https://snap-ci.com/geb/geb-example-maven/branch/master)
 
 # Description
 
