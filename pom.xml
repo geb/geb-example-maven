@@ -9,8 +9,8 @@
   <url>http://gebish.org</url>
   <properties>
     <gebVersion>0.12.2</gebVersion>
-    <seleniumVersion>2.46.0</seleniumVersion>
-    <groovyVersion>2.4.4</groovyVersion>
+    <seleniumVersion>2.51.0</seleniumVersion>
+    <groovyVersion>2.4.5</groovyVersion>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
