@@ -9,8 +9,8 @@
   <url>http://gebish.org</url>
   <properties>
     <gebVersion>LATEST</gebVersion>
-    <seleniumVersion>2.51.0</seleniumVersion>
-    <groovyVersion>2.4.5</groovyVersion>
+    <seleniumVersion>3.0.1</seleniumVersion>
+    <groovyVersion>2.4.7</groovyVersion>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
@@ -23,7 +23,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.8.1</version>
+      <version>4.12</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -56,7 +56,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.18.1</version>
+        <version>2.19</version>
         <configuration>
           <includes>
             <include>*Spec.*</include>
