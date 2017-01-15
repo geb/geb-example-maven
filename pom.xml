@@ -46,7 +46,7 @@
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-firefox-driver</artifactId>
+      <artifactId>selenium-chrome-driver</artifactId>
       <version>${seleniumVersion}</version>
       <scope>test</scope>
     </dependency>
@@ -92,6 +92,27 @@
             <version>${groovyVersion}</version>
           </dependency>
         </dependencies>
+      </plugin>
+      <plugin>
+      <groupId>com.github.webdriverextensions</groupId>
+      <artifactId>webdriverextensions-maven-plugin</artifactId>
+      <version>3.1.1</version>
+      <executions>
+        <execution>
+          <goals>
+            <goal>install-drivers</goal>
+          </goals>
+        </execution>
+      </executions>
+      <configuration>
+        <drivers>
+          <driver>
+            <name>chromedriver</name>
+            <version>2.27</version>
+            <platform>mac</platform>
+          </driver>
+        </drivers>
+      </configuration>
       </plugin>
     </plugins>
   </build>
