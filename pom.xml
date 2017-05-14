@@ -50,6 +50,12 @@
       <version>${seleniumVersion}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.5</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
@@ -92,6 +98,32 @@
             <version>${groovyVersion}</version>
           </dependency>
         </dependencies>
+      </plugin>
+      <plugin>
+      <groupId>com.github.webdriverextensions</groupId>
+      <artifactId>webdriverextensions-maven-plugin</artifactId>
+      <version>3.1.1</version>
+      <executions>
+        <execution>
+          <goals>
+            <goal>install-drivers</goal>
+          </goals>
+        </execution>
+      </executions>
+      <configuration>
+        <drivers>
+          <driver>
+            <name>chromedriver</name>
+            <version>2.27</version>
+            <platform>mac</platform>
+          </driver>
+          <driver>
+            <name>chromedriver</name>
+            <version>2.27</version>
+            <platform>linux</platform>
+          </driver>
+        </drivers>
+      </configuration>
       </plugin>
       <plugin>
       <groupId>com.github.webdriverextensions</groupId>
