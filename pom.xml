@@ -50,6 +50,12 @@
       <version>${seleniumVersion}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.5</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
@@ -110,6 +116,11 @@
             <name>chromedriver</name>
             <version>2.27</version>
             <platform>mac</platform>
+          </driver>
+          <driver>
+            <name>chromedriver</name>
+            <version>2.27</version>
+            <platform>linux</platform>
           </driver>
         </drivers>
       </configuration>
