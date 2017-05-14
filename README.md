@@ -1,4 +1,4 @@
-[![Build Status](https://snap-ci.com/geb/geb-example-maven/branch/master/build_image)](https://snap-ci.com/geb/geb-example-maven/branch/master)
+[![Build Status](https://gitlab.com/gebish/geb-example-maven/badges/latest/build.svg)](https://gitlab.com/gebish/geb-example-maven/pipelines)
 
 # Description
 
