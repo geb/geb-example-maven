@@ -11,7 +11,10 @@ import static org.apache.commons.lang3.SystemUtils.IS_OS_LINUX
 import static org.apache.commons.lang3.SystemUtils.IS_OS_MAC
 
 File findDriverExecutable() {
-    def defaultExecutable = CommandLine.find("chromedriver")
+    /**
+     * CommandLine.find method was deprecated in selenium 3.3.1
+     */
+    def defaultExecutable = new ExecutableFinder().find("chromedriver")
     if (defaultExecutable) {
         new File(defaultExecutable)
     } else {
