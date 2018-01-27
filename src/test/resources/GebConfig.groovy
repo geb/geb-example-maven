@@ -9,6 +9,7 @@ import org.openqa.selenium.os.ExecutableFinder
 
 import static org.apache.commons.lang3.SystemUtils.IS_OS_LINUX
 import static org.apache.commons.lang3.SystemUtils.IS_OS_MAC
+import static org.apache.commons.lang3.SystemUtils.IS_OS_WINDOWS
 
 File findDriverExecutable() {
     def defaultExecutable = new ExecutableFinder().find("chromedriver")
@@ -22,6 +23,8 @@ File findDriverExecutable() {
                 it.name.contains("linux")
             } else if (IS_OS_MAC) {
                 it.name.contains("mac")
+            } else if (IS_OS_WINDOWS) {
+                it.name.contains("windows")
             }
         }
     }

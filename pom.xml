@@ -122,6 +122,11 @@
             <version>2.27</version>
             <platform>linux</platform>
           </driver>
+          <driver>
+            <name>chromedriver</name>
+            <version>2.27</version>
+            <platform>windows</platform>
+          </driver>
         </drivers>
       </configuration>
       </plugin>
