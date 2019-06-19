@@ -10,16 +10,10 @@
   <properties>
     <gebVersion>3.0</gebVersion>
     <seleniumVersion>3.14.0</seleniumVersion>
-    <groovyVersion>2.4.16</groovyVersion>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
   <dependencies>
-    <dependency>
-      <groupId>org.codehaus.groovy</groupId>
-      <artifactId>groovy-all</artifactId>
-      <version>${groovyVersion}</version>
-    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -29,7 +23,7 @@
     <dependency>
       <groupId>org.spockframework</groupId>
       <artifactId>spock-core</artifactId>
-      <version>1.0-groovy-2.4</version>
+      <version>1.3-groovy-2.4</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>
@@ -81,23 +75,17 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.codehaus.gmaven</groupId>
-        <artifactId>gmaven-plugin</artifactId>
-        <version>1.5</version>
+        <groupId>org.codehaus.gmavenplus</groupId>
+        <artifactId>gmavenplus-plugin</artifactId>
+        <version>1.7.1</version>
         <executions>
           <execution>
             <goals>
-              <goal>testCompile</goal>
+              <goal>addTestSources</goal>
+              <goal>compileTests</goal>
             </goals>
           </execution>
         </executions>
-        <dependencies>
-          <dependency>
-            <groupId>org.codehaus.groovy</groupId>
-            <artifactId>groovy-all</artifactId>
-            <version>${groovyVersion}</version>
-          </dependency>
-        </dependencies>
       </plugin>
       <plugin>
       <groupId>com.github.webdriverextensions</groupId>
