@@ -4,13 +4,13 @@
 
 ## Description
 
-This is a simple example project for using Geb with Maven. It is setup to use Firefox driver.
+This is a simple example project for using Geb with Maven. It is setup to use the Chrome driver.
 
 ## Usage
 
 Just check it out and run…
 
-    mvn test
+    mvnw test
 
 ## Questions and issues
 
