@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.gebish.example</groupId>
+    <groupId>org.apache.groovy.geb.example</groupId>
   <artifactId>geb-maven-example</artifactId>
   <packaging>jar</packaging>
   <version>1</version>
   <name>Geb Maven Example</name>
   <url>http://gebish.org</url>
   <properties>
-    <gebVersion>7.0</gebVersion>
-    <seleniumVersion>4.2.2</seleniumVersion>
+      <gebVersion>8.0.0</gebVersion>
+      <seleniumVersion>4.27.0</seleniumVersion>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
   <dependencies>
     <dependency>
-      <groupId>org.gebish</groupId>
+        <groupId>org.apache.groovy.geb</groupId>
       <artifactId>geb-spock</artifactId>
-      <version>${gebVersion}</version>
+        <version>8.0.0-SNAPSHOT</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -32,19 +32,36 @@
       <version>3.5</version>
       <scope>test</scope>
     </dependency>
+      <dependency>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter-engine</artifactId>
+          <version>5.12.1</version>
+          <scope>test</scope>
+      </dependency>
+      <dependency>
+          <groupId>org.junit.platform</groupId>
+          <artifactId>junit-platform-engine</artifactId>
+          <version>1.12.1</version>
+          <scope>test</scope>
+      </dependency>
   </dependencies>
   <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M5</version>
+          <version>3.5.3</version>
         <dependencies>
           <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.7.0</version>
+              <version>5.12.1</version>
           </dependency>
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-engine</artifactId>
+                <version>1.12.1</version>
+            </dependency>
         </dependencies>
         <configuration>
           <includes>
@@ -66,7 +83,7 @@
       <plugin>
         <groupId>org.codehaus.gmavenplus</groupId>
         <artifactId>gmavenplus-plugin</artifactId>
-        <version>1.12.1</version>
+          <version>4.2.1</version>
         <executions>
           <execution>
             <goals>
@@ -75,37 +92,6 @@
             </goals>
           </execution>
         </executions>
-      </plugin>
-      <plugin>
-      <groupId>com.github.webdriverextensions</groupId>
-      <artifactId>webdriverextensions-maven-plugin</artifactId>
-      <version>3.1.3</version>
-      <executions>
-        <execution>
-          <goals>
-            <goal>install-drivers</goal>
-          </goals>
-        </execution>
-      </executions>
-      <configuration>
-        <drivers>
-          <driver>
-            <name>chromedriver</name>
-            <version>2.45.0</version>
-            <platform>mac</platform>
-          </driver>
-          <driver>
-            <name>chromedriver</name>
-            <version>2.45.0</version>
-            <platform>linux</platform>
-          </driver>
-          <driver>
-            <name>chromedriver</name>
-            <version>2.45.0</version>
-            <platform>windows</platform>
-          </driver>
-        </drivers>
-      </configuration>
       </plugin>
     </plugins>
   </build>
